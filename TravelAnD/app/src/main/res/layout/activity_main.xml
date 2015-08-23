@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="@string/welcome"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/travel_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ihouse_globe"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="12dp"
+        android:elevation="50dp" />
+
+    <TextView
+        android:id="@+id/selectTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Advisory Level:"
+        android:textColor="#000"
+        android:layout_below="@+id/travel_image"
+        android:layout_marginTop="36dp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/advisory_level"
+        android:prompt="@string/select"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/selectTag"
+        android:layout_toEndOf="@+id/selectTag" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="submitLevel"
+        android:text="@string/button_label" />
+
+</RelativeLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:text="Title?"
+            android:textColor="#000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/dialogDate_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/dialog_dateTag"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@+id/dialogTitle"/>
+
+        <TextView
+            android:id="@+id/dialogDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="100dp"
+            android:text="DATE?"
+            android:textColor="#000"
+            android:layout_alignTop="@+id/dialogDate_tag"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/dialogAdvisoryLevel_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:text="Advisory Level:"
+            android:textColor="#000"
+            android:layout_below="@+id/dialogDate"/>
+
+        <TextView
+            android:id="@+id/dialogAdvisoryLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEVEL"
+            android:textColor="#000"
+            android:layout_alignTop="@+id/dialogAdvisoryLevel_tag"
+            android:layout_toRightOf="@+id/dialogAdvisoryLevel_tag"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/advisory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginTop="8dp"
+            android:textStyle="italic"
+            android:text="advisory??"
+            android:layout_below="@+id/dialogAdvisoryLevel_tag"/>
+
+        <TextView
+            android:id="@+id/dialogTravel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="When Traveling:"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@+id/advisory" />
+
+        <TextView
+            android:id="@+id/dialogTraveling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Traveling"
+            android:textColor="#000"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/dialogTravel"/>
+
+        <TextView
+            android:id="@+id/dialonEntryExitTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="On Entry/Exit:"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@+id/dialogTraveling" />
+
+        <TextView
+            android:id="@+id/dialogEntryExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EX??"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/dialonEntryExitTag"/>
+
+        <TextView
+            android:id="@+id/healthTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Possible Health Concerns:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/dialogEntryExit"/>
+
+        <TextView
+            android:id="@+id/health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concerns??"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/healthTag"/>
+
+        <TextView
+            android:id="@+id/disastersTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:text="Potential Climate Disasters:"
+            android:layout_below="@+id/health"/>
+
+        <TextView
+            android:id="@+id/disasters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disasters??"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/disastersTag"/>
+
+        <TextView
+            android:id="@+id/lawCultureTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Law and Cultures:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/disasters"/>
+
+        <TextView
+            android:id="@+id/lawCulture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="law Culture??:"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/lawCultureTag"/>
+
+        <TextView
+            android:id="@+id/officeHelpAbroadTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Office Help Abroad:"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/lawCulture"/>
+
+        <TextView
+            android:id="@+id/officeHelpAbroad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help Abroad??"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/officeHelpAbroadTag"/>
+
+        <TextView
+            android:id="@+id/officeTitleTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offices"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            android:layout_below="@+id/officeHelpAbroad"/>
+
+        <TextView
+            android:id="@+id/closestOfficeTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Closest Office:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/officeTitleTag"/>
+
+        <TextView
+            android:id="@+id/closestOffice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="officeName??"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/closestOfficeTag"/>
+
+        <TextView
+            android:id="@+id/logLatTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Co-ordinates:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/closestOffice"/>
+
+        <TextView
+            android:id="@+id/logLat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="location??"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/logLatTag"
+            android:layout_below="@+id/closestOffice"/>
+
+        <TextView
+            android:id="@+id/contactInfoTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Information"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            android:layout_below="@+id/logLatTag"/>
+
+
+        <TextView
+            android:id="@+id/phoneTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/contactInfoTag"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone??"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/phoneTag"
+            android:layout_below="@+id/contactInfoTag"/>
+
+        <TextView
+            android:id="@+id/phoneEmergTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toll-Free:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/phoneTag"/>
+
+        <TextView
+            android:id="@+id/phoneEmerg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PhoneEmerg??"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/phoneEmergTag"
+            android:layout_below="@+id/phone"/>
+
+        <TextView
+            android:id="@+id/phoneFaxTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone-Fax:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/phoneEmergTag"/>
+
+        <TextView
+            android:id="@+id/phoneFax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone-Fax??"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/phoneFaxTag"
+            android:layout_below="@+id/phoneEmergTag"/>
+
+        <TextView
+            android:id="@+id/emailTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/phoneFax"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email??"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/emailTag"
+            android:layout_below="@+id/phoneFax"/>
+
+        <TextView
+            android:id="@+id/moreInfoTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For more info:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="#000"
+            android:layout_below="@+id/emailTag"/>
+
+        <TextView
+            android:id="@+id/moreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INFO??"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/moreInfoTag"
+            android:layout_below="@+id/email"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>
